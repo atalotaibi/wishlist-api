@@ -25,5 +25,5 @@ class ItemDetailView(RetrieveAPIView):
     queryset = Item.objects.all()
     serializer_class = ItemDetailSerializer
     lookup_field = 'id'
-    lookup_url_kwarg = 'restaurant_id'
+    lookup_url_kwarg = 'item_id'
     permission_classes = [IsAuthenticated,IsOwnerOrStaff]

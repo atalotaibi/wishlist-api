@@ -34,7 +34,7 @@ urlpatterns = [
 	path('items/<int:item_id>/favorite/', views.item_favorite, name='item-favorite'),
 
 	path('api/list/', ItemListView.as_view(), name='api-list'),
-	path('api/<int:restaurant_id>/detail/', ItemDetailView.as_view(), name='api-detail'),
+	path('api/<int:item_id>/detail/', ItemDetailView.as_view(), name='api-detail'),
 ]
 
 urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

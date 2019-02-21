@@ -16,7 +16,7 @@ class ItemListSerializer(serializers.ModelSerializer):
     detail = serializers.HyperlinkedIdentityField(
         view_name = "api-detail",
         lookup_field = "id",
-        lookup_url_kwarg = "restaurant_id"
+        lookup_url_kwarg = "item_id",
         )
     
     num_of_likes = serializers.SerializerMethodField()
