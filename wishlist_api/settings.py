@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import datetime
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +26,7 @@ SECRET_KEY = ')^bn_h$1%iue(%3n%nc_-sqt&2_+=@^4iqxkm+^4*)1rbw_2x9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '157.230.30.10']
+ALLOWED_HOSTS = ['127.0.0.1', '138.68.86.177']
 
 
 # Application definition
@@ -87,7 +88,7 @@ else:
 			'ENGINE': 'django.db.backends.postgresql_psycopg2',
 			'NAME': 'django',
 			'USER': 'django',
-			'PASSWORD':'3811a89f5f02279c3e286d111cffd37e',
+			'PASSWORD':'10c697d056e61bde4cbd804190c44ff3',
 			'HOST': 'localhost',
 			'PORT': '',
 		}
